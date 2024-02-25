@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; 
+    display: flex;
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    padding-right: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+button[type="submit"],
+button[type="button"] {
+    padding: 10px 20px;
+    background-color: #4253ef;
+    width: 200px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #3141c9;
+}
+
+
+.sidebar {
+    width: 200px;
+    height: 100vh; /* Set sidebar height to full screen height */
+    padding: 20px;
+    background-color: #4253ef; /* Dark blue sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fix the sidebar position */
+    left: 0; /* Stick it to the left side of the screen */
+}
+
+.sidebar h2 {
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #ccc;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    transition: padding 0.3s ease;
+}
+
+.content h2 {
+    color: #000; /* Black text color for content area */
+}
+
+.container1 {
+    display: flex;
+}
+
+#resumeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    padding: 20px;
+    
+    margin-left: 480px;
+    overflow-y: auto;
+    height: 100vh; 
+}
+
+#resumeContainer img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+    
+}
+#resumeContainer img:hover {
+    transform: scale(1.05);
+}
+
